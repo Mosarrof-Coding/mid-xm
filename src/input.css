@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    body{
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .sweep{
+        width: 100%;
+        height: 100vh;
+    }
+    .slider-main{
+        position: relative;
+    }
+    #swiper{
+        background-color: #00a4e3;
+    }
+    .swiper{
+        max-width: 1024px !important;
+        margin: auto;
+        padding: 0 10px !important;
+    }
+    .content{
+        max-width: 360px;
+        height: 440px;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+    .content p{
+        font-size: 18px;
+        line-height: 36px;
+        color:#74858d;
+        letter-spacing: 0;
+        
+    }
+    .content p span{
+        font-weight: 600;
+    }
+    .content h5{
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #394d57;
+
+    }
+    .content h6{
+        font-size: 14px;
+        line-height: 21px;
+        color:#74858D;
+
+    }
+    .content .avatar{
+        padding: 30px 0 10px 0;
+    }
+    .swiper-wrapper{
+        padding: 150px 0;
+    }
+    .swipe-pagination{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        row-gap: 10px;
+    }
+    .btn{
+        z-index: 999;
+        position: absolute;
+        left: 0;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    .btn2{
+        z-index: 999;
+        position: absolute;
+        right: 0 !important;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    .icofont{
+        font-size: 30px;
+        color: #ffffff;
+    }
+    .swiper-pagination .swiper-pagination-bullet{
+        width: 15px !important;
+        height: 15px !important;
+        background: #fff !important;
+        opacity: 1 !important;
+        display: inline-block;
+    }
+    .swiper-pagination .swiper-pagination-bullet:hover{
+        background: transparent !important;
+        border: 2px solid white !important;
+    }
+    .swiper-pagination .swiper-pagination-bullet-active{
+        background: transparent !important;
+        border: 2px solid white !important;
+    }
+}
