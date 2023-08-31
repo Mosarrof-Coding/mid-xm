@@ -6,22 +6,69 @@
     <title>Swiper slider</title>
     <!-- swiper-css------- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- font awesome---------->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- bootstrap-icon----- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-- google font------ -->
+    <!-- google font roboto------ -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- google font inter------ -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- output-css----- -->
     <link rel="stylesheet" href="./dist/output.css">
 </head>
 <body>
-    
-    <section id="swiper" class="sweep">
-        <div class="mx-auto px-5">
-            <div class="slider-main">
+    <!-- intro------- -->
+    <header>
+        <!-- navbar--------- -->
+        <nav class="bg-[#0c1d2c]">
+            <div class="nav-wrapper flex justify-between px-5 py-0">
+                <div class="logo pt-4 pb-[22px]">
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 30" width="168" height="30">
+                            <path fill="#FFF" fill-rule="nonzero" d="M63.8 15v15h-3.3v-2.2C59.8 29 58.2 30 56 30 52 30 49 26.7 49 22.3c0-4.2 2.8-7.3 7-7.3 2.6 0 4 1.6 4.4 2.5V15h3.4zm77-7v22h-3.3v-2.2c-.7 1.2-2.3 2.2-4.4 2.2-4.2 0-7.1-3.3-7.1-7.7 0-4.2 2.8-7.3 7-7.3 2.6 0 4 .9 4.4 1.8V8h3.4zm9 7c4.4 0 7 2.9 7 7.3l-.1 1.1h-10.3c0 2.2 1.7 3.7 3.8 3.7 2 0 3.1-1 3.6-2.5l2.8 1c-.7 2.4-3 4.4-6.4 4.4-3.8 0-7.2-2.8-7.2-7.6 0-4.4 3.3-7.4 6.9-7.4zm-79.2 0v2.5C71.3 15.9 73 15 75 15h1v3.7l-1.2-.1c-2.8 0-4.1 1.6-4.1 4.3V30H67V15h3.6zm52.9 0v15H120V15h3.5zm-38.8-4v4.4H88v3h-3.3v6.7c0 1.3.6 1.9 2 1.9l1.3-.2v2.9c-.2 0-1 .3-2.3.3-3 0-4.8-1.6-4.8-4.3v-7.2H78v-3h.8c1.7 0 2.5-1 2.5-2.3V11h3.4zm31.8-3v22H113V8h3.5zm46 7v2.6c.8-1.7 2.5-2.6 4.5-2.6h1v3.7l-1.2-.1c-2.8 0-4.1 1.6-4.1 4.3V30H159V15h3.6zM15.2 8c4.5 0 6.6 2.3 7.4 4.4l-3.3 1.2c-.5-1.2-1.7-2.4-4.1-2.4-2.2 0-3.8 1.4-3.8 3 0 1.3.9 2.3 2.6 2.7l3.2.6c3.8.8 5.9 3.1 5.9 6.1 0 3.3-2.8 6.4-7.8 6.4-4.8 0-7.4-2.6-8.2-5.2l1.6-.6.4-.1 1.4-.5c.6 1.7 2.2 3.2 4.8 3.2 2.7 0 4-1.3 4-3 0-1.3-1-2.4-3-2.8l-3-.6c-3.4-.7-5.6-2.8-5.6-6C7.6 11 11 8 15.1 8zm13.2 7v2.5a5.2 5.2 0 014.4-2.5c1.9 0 3.6.8 4.4 2.5 1.1-2 2.8-2.5 4.7-2.5 2.7 0 5.2 1.7 5.2 5.5V30h-3.4v-8.9c0-1.7-.8-3-2.8-3-1.8 0-3 1.5-3 3.2V30h-3.5v-8.9c0-1.7-.8-3-2.8-3-1.9 0-3 1.4-3 3.2V30H25V15h3.3zm74.8-7c4.5 0 6.6 2.3 7.4 4.4l-3.3 1.2c-.5-1.2-1.7-2.4-4.1-2.4-2.2 0-3.8 1.4-3.8 3 0 1.3.9 2.3 2.6 2.7l3.2.6c3.8.8 5.9 3.1 5.9 6.1 0 3.3-2.8 6.4-7.8 6.4-4.8 0-7.4-2.6-8.2-5.2l1.6-.6.4-.1 1.4-.5c.6 1.7 2.2 3.2 4.8 3.2 2.7 0 4-1.3 4-3 0-1.3-1-2.4-3-2.8l-3-.6c-3.4-.7-5.6-2.8-5.6-6C95.6 11 99 8 103.1 8zM56.4 18c-2.5 0-4.4 1.7-4.4 4.5 0 2.7 1.7 4.5 4.3 4.5 2.5 0 4.3-1.8 4.3-4.6 0-2.7-1.7-4.4-4.2-4.4zm77 0c-2.5 0-4.4 1.7-4.4 4.5 0 2.7 1.7 4.5 4.3 4.5 2.5 0 4.3-1.8 4.3-4.6 0-2.7-1.7-4.4-4.2-4.4zM2 11.7l2 .2V18c.7 1.3 1 2.3 1 3 0 1-1 2-2 2s-2-1-2-2c0-.7.3-1.7 1-3v-6.3zm148 6.1a3.5 3.5 0 00-3.5 3.3h7c-.1-1.7-1.2-3.3-3.6-3.3zM121.6 8c1.3 0 2.3 1 2.3 2.3 0 1.2-1 2.2-2.3 2.2-1.2 0-2.2-1-2.2-2.2 0-1.3 1-2.3 2.2-2.3zM13.7.2L20 2l.7.2 6.9 2c.6.1 1 .9.4 1.2L22 8.2c-3.6-3-11.4-3.4-15 2L.5 9.6c-.7-.1-.7-.7 0-1.2l5-3.5.6-.5 5.7-4c.5-.3 1-.5 2-.1z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="menu gap-8 hidden xl:flex">
+                    <ul class="flex items-center gap-10">
+                        <li><a href="#" class="navLink">Help</a></li>
+                        <li><a href="#" class="navLink">Features</a></li>
+                        <li><a href="#" class="navLink">Blog</a></li>
+                        <li><a href="#" class="navLink">Try</a></li>
+                        <li><a href="#" class="navLink">Account</a></li>
+                    </ul>
+                    <div class="button flex items-center gap-6">
+                        <a href="#" class="primaryBtn">Templates</a>
+                        <a href="#" class="primaryBtn pbtn2">Pricing</a>
+                    </div>
+                </div>
+                <div class="mobile-menu xl:hidden flex items-center rotate-90">
+                    <a href="#" class="mobileBtn xl:hidden p-1 border border-b-gray-50 text-white font-bold">
+                        |||
+                    </a>
+                </div>
+            </div>
+            <!-- mobile -menu---- -->
+            <ul class="hidden montilucast text-center">
+                <li><a href="#" class="navLink">Help</a></li>
+                <li><a href="#" class="navLink">Features</a></li>
+                <li><a href="#" class="navLink">Blog</a></li>
+                <li><a href="#" class="navLink">Try</a></li>
+                <li><a href="#" class="navLink">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- body------ -->
+    <main>
+        <!-- Hero section------ ------->
+        <section id="swiper" class="sweep">
+            <div class="slider-main px-5 lg:px-[40px] xl:px-0">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                          <div class="content bg-white text-center rounded-md px-[10px] py-[30px]">
+                          <div class="content bg-white text-center rounded-md px-[28px] py-[30px]">
                               <img src="./dist/images/company-logo1.webp" alt="logo" class=" inline-block">
                               <p>
                                   I’ve been searching for a good free slider plugin for a long time. <span>This is definitely the one</span>! For a free plugin it does a lot of things!
@@ -32,7 +79,7 @@
                           </div>
                         </div>
                         <div class="swiper-slide">
-                          <div class="content bg-white text-center rounded-md px-[10px] py-[30px]">
+                          <div class="content bg-white text-center rounded-md px-[28px] py-[30px]">
                               <img src="./dist/images/company-logo2.webp" alt="logo" class=" inline-block">
                               <p>
                                   Smart Slider 3 is <span>more than powerful</span>. It is amazing.Thanks to developer for putting so much effort to create this well-thought plugin.
@@ -43,7 +90,7 @@
                           </div>
                         </div>
                         <div class="swiper-slide">
-                          <div class="content bg-white text-center rounded-md px-[10px] py-[30px]">
+                          <div class="content bg-white text-center rounded-md px-[28px] py-[30px]">
                               <img src="./dist/images/company-logo5.webp" alt="logo" class=" inline-block">
                               <p>
                                   The backend of the plugin is <span>beautifully designed</span> and fairly intuitive – although there are so many options, it’s almost daunting.
@@ -54,7 +101,7 @@
                           </div>
                         </div>
                         <div class="swiper-slide">
-                          <div class="content bg-white text-center rounded-md px-[10px] py-[30px]">
+                          <div class="content bg-white text-center rounded-md px-[28px] py-[30px]">
                               <img src="./dist/images/company-logo3.webp" alt="logo" class=" inline-block">
                               <p>
                                   If there was a 10 start I’d give it. When I found Smart Slider 3 instantly knew that this was the <span>premium slider</span> I needed for all my projects.
@@ -65,7 +112,7 @@
                           </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="content bg-white text-center rounded-md px-[10px] py-[30px]">
+                            <div class="content bg-white text-center rounded-md px-[28px] py-[30px]">
                                 <img src="./dist/images/company-logo1.webp" alt="logo" class=" inline-block">
                                 <p>
                                     I’ve been searching for a good free slider plugin for a long time. <span>This is definitely the one</span>! For a free plugin it does a lot of things!
@@ -76,7 +123,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                          <div class="content bg-white text-center rounded-md px-[10px] py-[30px]">
+                          <div class="content bg-white text-center rounded-md px-[28px] py-[30px]">
                               <img src="./dist/images/company-logo4.webp" alt="logo" class=" inline-block">
                               <p>
                                   Cannot recommend this plugin highly enough. <span>Get the Pro version</span>. Use the Slider and all your website dreams will come true.
@@ -85,17 +132,6 @@
                               <h5>JAMES SMITH</h5>
                               <h6>PHP Developer</h6>
                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content bg-white text-center rounded-md px-[10px] py-[30px]">
-                                <img src="./dist/images/company-logo5.webp" alt="logo" class=" inline-block">
-                                <p>
-                                    The backend of the plugin is <span>beautifully designed</span> and fairly intuitive – although there are so many options, it’s almost daunting.
-                                </p>
-                                <img src="./dist/images/avatar3.webp" alt="" class="avatar inline-block">
-                                <h5>RYAN VIDAL</h5>
-                                <h6>Interactive Designer</h6>
-                            </div>
                         </div>
                     </div>
                     <div class="swiper-pagination">
@@ -108,8 +144,193 @@
                     <i class="bi bi-chevron-right icofont"></i>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Testimonial carousel--- -->
+        <section id="testimonials">
+            <div class="contiser max-w-[820px] mx-auto px-5">
+                <div class="carousel-link mt-[80px] mb-[30px] px-[35px] py-[27px] rounded-lg">
+                    <h1 class="text-[44px] leading-[56px] text-[#283f4d] font-bold">Testimonial Carousel</h1>
+                    <ul class="flex items-center flex-wrap gap-1 py-3">
+                        <li><a href="#" class="text-lg leading-8 text-[#006AFF] font-bold w-[fit-content]">💻 Settings</a></li>|
+                        <li><a href="#" class="text-lg leading-8 text-[#006AFF] font-bold w-[fit-content]">🎓 Layers</a></li>|
+                        <li><a href="#" class="text-lg leading-8 text-[#006AFF] font-bold w-[fit-content]">🎉 Animations</a></li>|
+                        <li><a href="#" class="text-lg leading-8 text-[#006AFF] font-bold w-[fit-content]">🏗️ Layout</a></li>|
+                        <li><a href="#" class="text-lg leading-8 text-[#006AFF] font-bold w-[fit-content]">📱 Responsive</a></li>|
+                        <li><a href="#" class="text-lg leading-8 text-[#006AFF] font-bold w-[fit-content]">⚡ Speed</a></li>
+                    </ul>
+                    <p class="text-lg font-medium text-[#46647C] leading-7 py-[7px]">
+                        <span class="text-sm font-bold text-[#46647C] tracking-[1px]">
+                            DESCRIPTION:
+                        </span> 
+                        Display your product testimonials in an elegant and modern way, using a testimonials slider.
+                    </p>
+                    <p class="text-lg font-medium text-[#46647C] leading-7 py-[7px]">
+                        <span class="text-sm font-bold text-[#46647C] tracking-[1px]">
+                            PREMIUM:
+                        </span>
+                        Gain access to all slider templates with a 
+                        <span>
+                            <a href="#" class="text-[#006AFF]">
+                                single purchase
+                            </a>
+                        </span>.
+                    </p>
+                    <p class="text-lg font-medium text-[#46647C] leading-7">
+                        <span class="text-sm font-bold text-[#46647C] tracking-[1px]">
+                            MINIMUM VERSION: 
+                        </span>
+                        3.5.1.3
+                    </p>
+                    <div class="link-btn flex flex-wrap mt-4">
+                        <bold class="text-sm font-bold text-[#46647C] leading-10 tracking-[1px] mr-4">TAGS:</bold>
+                        <div class="flex items-center flex-wrap gap-3">
+                            <a href="#" class="text-xs leading-[30px] text-white font-medium tracking-[1px] px-4 rounded-full bg-blue-700 inline-block">CAROUSEL</a>
+                            <a href="#" class="text-xs leading-[30px] text-white font-medium tracking-[1px] px-4 rounded-full bg-blue-700 inline-block">FULL WIDTH</a>
+                            <a href="#" class="text-xs leading-[30px] text-white font-medium tracking-[1px] px-4 rounded-full bg-blue-700 inline-block">PRO</a>
+                            <a href="#" class="text-xs leading-[30px] text-white font-medium tracking-[1px] px-4 rounded-full bg-blue-700 inline-block">TESTIMONIAL SLIDER</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- settings------ -->
+                <div class="setting pt-10 pb-24">
+                    <div class="dibba">
+                        <h2 class="text-4xl leading-[46px] tracking-normal font-bold text-[#283F4D]">Settings</h2>
+                        <p class="text-lg font-medium leading-[32.4px] text-[#46647C] tracking-normal pt-3">
+                            Minimalism and simplicity are the two expressions that surround the Testimonial Carousel slider. Displaying testimonials doesn’t always need fancy stuff. It’s not the effect that will convince your hesitant visitors to be your customers. The slider above isn’t fancy, it uses its minimalist design to convert. It has all <a href="#"><span class="text-[#006AFF]">testimonial slider</span></a> requirements: the customer’s words, name, image and occupation. You can see all information the slider displays in a simple but clear way.
+                        </p>
+                        <p class="text-lg font-medium leading-[32.4px] text-[#46647C] tracking-normal pt-4">
+                            The slider has three different navigation options. The two most obvious are the arrows and bullets. The arrows are placed at the left and right side of the slider. They take a minimalistic approach, and their white color is easy to see on the blue background. You can find the bullets at the bottom of the slider. Just like the arrows, they have white color, although with a slight opacity. The active bullet is marked with an empty circle, which means it has only border but not background. The third way to switch slides is to click on them. Each slide has a custom link action to switch to the next or previous slide. This custom navigation makes the <a href="#"><span class="text-[#006AFF]">WordPress Carousel</span></a> look and feel special. You can use the layout in your dynamic slide generator to create dynamic testimonials.
+                        </p>
+                    </div>
+                    <div class="dibba pt-12">
+                        <h2 class="text-4xl leading-[46px] tracking-normal font-bold text-[#283F4D]">Layers</h2>
+                        <p class="text-lg font-medium leading-[32.4px] text-[#46647C] tracking-normal pt-3">
+                            Minimalism and simplicity are the two expressions that surround the Testimonial Carousel slider. Displaying testimonials doesn’t always need fancy stuff. It’s not the effect that will convince your hesitant visitors to be your customers. The slider above isn’t fancy, it uses its minimalist design to convert. It has all <a href="#"><span class="text-[#006AFF]">testimonial slider</span></a> requirements: the customer’s words, name, image and occupation. You can see all information the slider displays in a simple but clear way.
+                        </p>
+                        <p class="text-lg font-medium leading-[32.4px] text-[#46647C] tracking-normal pt-4">
+                            <img src="./dist/images/textlayer.jpg" alt="img">
+                        </p>
+                    </div>
+                    <div class="dibba pt-12">
+                        <h2 class="text-4xl leading-[46px] tracking-normal font-bold text-[#283F4D]">Animations</h2>
+                        <p class="text-lg font-medium leading-[32.4px] text-[#46647C] tracking-normal pt-3">
+                            This carousel slider has a horizontal main animation, so when you switch slide, it will move horizontally. The single switch option is enabled, so you can switch only one slide.
+                        </p>
+                        <p class="text-lg font-medium leading-[32.4px] text-[#46647C] tracking-normal pt-4">
+                            <img src="./dist/images/singleswitch.jpg" alt="img">
+                        </p>
+                    </div>
+                    <div class="dibba pt-12">
+                        <h2 class="text-4xl leading-[46px] tracking-normal font-bold text-[#283F4D]">Responsive</h2>
+                        <p class="text-lg font-medium leading-[32.4px] text-[#46647C] tracking-normal pt-3">
+                            By default controls like arrows or bullets are hidden on mobile, but at this slider they are visible. At carousels you can display only whole slides, so you can’t display a part of other slides. If you check it on mobile, you can notice that one slide is visible, but thanks for the controls, your visitor can notice there are more slides.
+                        </p>
+                        <div class="py-5 my-5 border-t border-b border-[#a59bfc]">
+                            <div class="flex flex-wrap">
+                                <bold class="text-lg font-semibold leading-[32.4px] text-[#46647C] tracking-normal inline-block">Related Post:</bold>
+                                <p class="text-lg font-medium leading-[32.4px] text-[#006aff] tracking-normal inline-block ml-2">
+                                    Best Testimonial Slider Examples for WordPress
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap mt-3">
+                                <bold class="text-lg font-semibold leading-[32.4px] text-[#46647C] tracking-normal inline-block">Related Post:</bold>
+                                <p class="text-lg font-medium leading-[32.4px] text-[#006aff] tracking-normal inline-block ml-2">
+                                    All You Need To Know About Carousel Slider Type
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- similar-slider------ -->
+        <section id="similar-slider" class="bg-[#0c1d2c] py-14">
+            <div class="inner-content max-w-[1240px] px-5 mx-auto text-center">
+                <h2 class="text-4xl leading-[46px] tracking-normal font-bold text-white pb-12">Similar Sliders - Testimonial Slider</h2>
+                <div class="similar-sliders flex justify-evenly flex-wrap gap-5">
+                    <a href="https://smartslider3.com/static-testimonial/"><img src="https://smartslider3.com/wp-content/uploads/2015/10/statictestimonial-1.jpg" alt="Static testimonial" width="270" height="180" loading="lazy" class="alignleft size-full">
+                    </a>
+                    <a href="https://smartslider3.com/simple-testimonial/"><img src="https://smartslider3.com/wp-content/uploads/2017/02/simpletestimonial-1.jpg" alt="Simple Testimonial" width="270" height="180" loading="lazy" class="alignleft size-full">
+                    </a>
+                    <a href="https://smartslider3.com/testimonial-showcase/"><img src="https://smartslider3.com/wp-content/uploads/2017/02/testimonialshowcase.jpg" alt="Testimonial Showcase" width="270" height="180" loading="lazy" class="alignleft size-full">
+                    </a>
+                    <a href="https://smartslider3.com/orion-showcase/"><img src="https://smartslider3.com/wp-content/uploads/2022/10/orion-showcase-og.jpg" alt="Orion Showcase" width="270" height="180" loading="lazy" class="alignleft size-full">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- social-link------- -->
+        <section id="social-links" class="bg-[#1e2d41] py-9">
+            <div class="inner-content max-w-[1240px] px-5 mx-auto flex flex-wrap gap-6">
+                <div class="social-txt">
+                    <h3 class="text-2xl font-semibold text-white tracking-normal"> Join the community</h3>
+                    <h6 class="font-normal text-[#C4CCD2] tracking-normal leading-7">Follow us and stay connected and updated.</h6>
+                </div>
+                <div class="social-items flex gap-2 items-center">
+                    <img src="./dist/images/Facebook.png" alt="img">
+                    <img src="./dist/images/Twitter.png" alt="img">
+                </div>
+                <div class="social-txt">
+                    <h3 class="text-2xl font-semibold text-white tracking-normal">Subscribe our newsletter</h3>
+                    <h6 class="font-normal text-[#C4CCD2] tracking-normal leading-7">And receive the latest news from Smart Slider.</h6>
+                </div>
+                <form action="">
+                    <div class="inp-roup flex items-center flex-wrap rounded-full overflow-hidden bg-white max-w-fit">
+                        <input type="email" placeholder="example@gmail.com" class="py-1 pl-4 border-none outline-none max-w-[224px]">
+                        <input type="submit" value="Subscribe" class="smBtn py-3 w-[110px] grid place-items-center bg-[#0b69ed] text-white text-lg font-semibold">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer------- -->
+    <footer>
+        <section id="footer" class="bg-[#182333]">
+            <div class="inner-content max-w-[1240px] px-5 py-14 mx-auto flex justify-between flex-wrap gap-5">
+                <div class="logish">
+                    <img src="./dist/images/nextend.png" alt="logo">
+                    <p class="leading-8 text-[#C4CCD2] max-w-[380px]">
+                        Extending the world of WordPress and Joomla. Take your website to the next level with our plugins. Download Smart Slider 3 today and get started building beautiful sliders with confidence using our advanced editor.
+                    </p>
+                </div>
+                <div class="social w-fit">
+                    <h4 class="text-xl font-medium leading-8 text-white tracking-normal block pb-4 relative after:content-[''] after:w-12 after:h-1 after:bg-[#374558] after:left-0 after:bottom-1 after:block after:absolute">Company</h4>
+                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">About us</a>
+                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Nextendweb</a>
+                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Terms and Conditions</a>
+                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Privacy Policy</a>
+                </div>
+                <div class="social w-fit">
+                    <h4 class="text-xl font-medium leading-8 text-white tracking-normal block pb-4 relative after:content-[''] after:w-12 after:h-1 after:bg-[#374558] after:left-0 after:bottom-1 after:block after:absolute">Support</h4>
+                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Documentation</a>
+                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Tutorial Videos</a>
+                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Pricing FAQ</a>
+                </div>
+                <div class="social w-fit">
+                    <h4 class="text-xl font-medium leading-8 text-white tracking-normal block pb-4 relative after:content-[''] after:w-12 after:h-1 after:bg-[#374558] after:left-0 after:bottom-1 after:block after:absolute">Social</h4>
+                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Facebook</a>
+                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Twitter</a>
+                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Blog</a>
+                </div>
+                <div class="social w-fit">
+                    <h4 class="text-xl font-medium leading-8 text-white tracking-normal block pb-4 relative after:content-[''] after:w-12 after:h-1 after:bg-[#374558] after:left-0 after:bottom-1 after:block after:absolute">Quick Links</h4>
+                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Login to Account</a>
+                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Become an Affiliate</a>
+                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Partners & Deals</a>
+                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Why upgrade to Pro</a>
+                </div>
+            </div>
+            <div class="copyright text-[#C4CCD2] text-center py-5 bg-[#16202e]">
+                Copyright © 2023 Nextend. All rights reserved.
+            </div>
+        </section>
+    </footer>
+    
 
 
     <!-- swiper js--------- -->

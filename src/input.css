@@ -2,29 +2,102 @@
 @tailwind components;
 @tailwind utilities;
 @layer base{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* root --------- */
+    :root{
+        --white           :#fff;
+        --same-white      :#e7e9ea;
+        --white-trp       :#ffffffcc ;
+        --dark9           :#0c1d2c;
+        --blue            :#0b69ed;
+        --blue2           :#2176f8;
+        --blue3           :#00A4E3;
+        --blue-white      :#e2f1f9;
+    }
     body{
-        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
         width: 100%;
         box-sizing: border-box;
     }
+    a{
+        text-decoration: none;
+    }
+    img{
+        max-width: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+    }
+    /* nav--------- */
+    nav{
+        position: relative;
+    }
+    .navLink{
+        color:var(--same-white);
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 68px;
+        transition: all linear .3s;
+    }
+    .navLink:hover{
+        color:var(--white);
+    }
+    /* home-btn------------ */
+    .primaryBtn{
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        color: #000;
+        background-color:var(--same-white);
+        padding: 8px 24px;
+        border-radius: 20px;
+        display: inline-block;
+    }
+    .primaryBtn:hover{
+        background-color:var(--white);
+    }
+    .pbtn2{
+        background-color: var(--blue);
+        color:var(--white);
+    }
+    .pbtn2:hover{
+        background-color: var(--blue2);
+    }
+    
+    /* =====mobile togglar------ */
+    .mbBlock{
+        display: block !important;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        z-index: 99;
+        background-color: #1c1a1aab;
+    }
+    /*hero swiper slider------- */
     .sweep{
         width: 100%;
-        height: 100vh;
     }
     .slider-main{
         position: relative;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--blue3);
     }
     #swiper{
-        background-color: #00a4e3;
     }
     .swiper{
-        max-width: 1024px !important;
+        max-width: 1196px !important;
         margin: auto;
-        padding: 0 10px !important;
+        padding: 0 5px !important;
     }
     .content{
         max-width: 360px;
-        height: 440px;
         margin: auto;
         text-align: center;
         width: 100%;
@@ -56,7 +129,7 @@
         padding: 30px 0 10px 0;
     }
     .swiper-wrapper{
-        padding: 150px 0;
+        padding: 142px 0;
     }
     .swipe-pagination{
         padding: 20px;
@@ -67,14 +140,14 @@
     .btn{
         z-index: 999;
         position: absolute;
-        left: 0;
+        left: 20px;
         top:50%;
         transform: translateY(-50%);
     }
     .btn2{
         z-index: 999;
         position: absolute;
-        right: 0 !important;
+        right: 20px !important;
         top:50%;
         transform: translateY(-50%);
     }
@@ -83,18 +156,42 @@
         color: #ffffff;
     }
     .swiper-pagination .swiper-pagination-bullet{
-        width: 15px !important;
-        height: 15px !important;
-        background: #fff !important;
+        width: 12px !important;
+        height: 12px !important;
+        background: var(--white-trp) !important;
         opacity: 1 !important;
         display: inline-block;
     }
     .swiper-pagination .swiper-pagination-bullet:hover{
         background: transparent !important;
-        border: 2px solid white !important;
+        border: 2px solid var(--white-trp)!important;
     }
     .swiper-pagination .swiper-pagination-bullet-active{
         background: transparent !important;
-        border: 2px solid white !important;
+        border: 2px solid var(--white-trp)!important;
+    }
+    /* carousel-------- */
+    .carousel-link{
+        background-color: var(--blue-white);
+        width: 100%;
+        padding: 50px;
+    }
+
+    /* responsive------ */
+    @media (max-width: 1024px) {
+        h1{
+            font-size: 40px !important;
+        }
+        h2{
+            font-size: 28px !important;
+        }
+    }
+    @media (max-width: 640px) {
+        h1{
+            font-size: 32px !important;
+        }
+        h2{
+            font-size: 26px !important;
+        }
     }
 }

@@ -1,8 +1,9 @@
 {
   "devDependencies": {
+    "daisyui": "^3.6.4",
     "tailwindcss": "^3.3.3"
   },
-  "scripts":{
-    "start":"npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   }
 }
