@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swiper slider</title>
+    <!-- favicon------ -->
+    <link rel="shortcut icon" href="./dist/images/favicon.svg" type="image/x-icon">
     <!-- swiper-css------- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- font awesome---------->
@@ -19,10 +21,10 @@
 </head>
 <body>
     <!-- intro------- -->
-    <header>
+    <header class="header">
         <!-- navbar--------- -->
         <nav class="bg-[#0c1d2c]">
-            <div class="nav-wrapper flex justify-between px-5 py-0">
+            <div class="nav-wrapper">
                 <div class="logo pt-4 pb-[22px]">
                     <a href="index.html">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 30" width="168" height="30">
@@ -30,7 +32,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="menu gap-8 hidden xl:flex">
+                <div class="menu">
                     <ul class="flex items-center gap-10">
                         <li><a href="#" class="navLink">Help</a></li>
                         <li><a href="#" class="navLink">Features</a></li>
@@ -38,18 +40,18 @@
                         <li><a href="#" class="navLink">Try</a></li>
                         <li><a href="#" class="navLink">Account</a></li>
                     </ul>
-                    <div class="button flex items-center gap-6">
+                    <div class="button">
                         <a href="#" class="primaryBtn">Templates</a>
                         <a href="#" class="primaryBtn pbtn2">Pricing</a>
                     </div>
                 </div>
-                <div class="mobile-menu xl:hidden flex items-center rotate-90">
-                    <a href="#" class="mobileBtn xl:hidden p-1 border border-b-gray-50 text-white font-bold">
+                <div class="mobile-menu">
+                    <a href="#" class="mobileBtn">
                         |||
                     </a>
                 </div>
             </div>
-            <!-- mobile -menu---- -->
+            <!-- mobile -menu----------->
             <ul class="hidden montilucast text-center">
                 <li><a href="#" class="navLink">Help</a></li>
                 <li><a href="#" class="navLink">Features</a></li>
@@ -64,11 +66,11 @@
     <main>
         <!-- Hero section------ ------->
         <section id="swiper" class="sweep">
-            <div class="slider-main px-5 lg:px-[40px] xl:px-0">
+            <div class="slider-main">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                          <div class="content bg-white text-center rounded-md px-[28px] py-[30px]">
+                          <div class="content">
                               <img src="./dist/images/company-logo1.webp" alt="logo" class=" inline-block">
                               <p>
                                   I’ve been searching for a good free slider plugin for a long time. <span>This is definitely the one</span>! For a free plugin it does a lot of things!
@@ -79,7 +81,7 @@
                           </div>
                         </div>
                         <div class="swiper-slide">
-                          <div class="content bg-white text-center rounded-md px-[28px] py-[30px]">
+                          <div class="content">
                               <img src="./dist/images/company-logo2.webp" alt="logo" class=" inline-block">
                               <p>
                                   Smart Slider 3 is <span>more than powerful</span>. It is amazing.Thanks to developer for putting so much effort to create this well-thought plugin.
@@ -90,7 +92,7 @@
                           </div>
                         </div>
                         <div class="swiper-slide">
-                          <div class="content bg-white text-center rounded-md px-[28px] py-[30px]">
+                          <div class="content">
                               <img src="./dist/images/company-logo5.webp" alt="logo" class=" inline-block">
                               <p>
                                   The backend of the plugin is <span>beautifully designed</span> and fairly intuitive – although there are so many options, it’s almost daunting.
@@ -101,7 +103,7 @@
                           </div>
                         </div>
                         <div class="swiper-slide">
-                          <div class="content bg-white text-center rounded-md px-[28px] py-[30px]">
+                          <div class="content">
                               <img src="./dist/images/company-logo3.webp" alt="logo" class=" inline-block">
                               <p>
                                   If there was a 10 start I’d give it. When I found Smart Slider 3 instantly knew that this was the <span>premium slider</span> I needed for all my projects.
@@ -112,7 +114,7 @@
                           </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="content bg-white text-center rounded-md px-[28px] py-[30px]">
+                            <div class="content">
                                 <img src="./dist/images/company-logo1.webp" alt="logo" class=" inline-block">
                                 <p>
                                     I’ve been searching for a good free slider plugin for a long time. <span>This is definitely the one</span>! For a free plugin it does a lot of things!
@@ -123,7 +125,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                          <div class="content bg-white text-center rounded-md px-[28px] py-[30px]">
+                          <div class="content">
                               <img src="./dist/images/company-logo4.webp" alt="logo" class=" inline-block">
                               <p>
                                   Cannot recommend this plugin highly enough. <span>Get the Pro version</span>. Use the Slider and all your website dreams will come true.
@@ -148,24 +150,24 @@
 
         <!-- Testimonial carousel--- -->
         <section id="testimonials">
-            <div class="contiser max-w-[820px] mx-auto px-5">
-                <div class="carousel-link mt-[80px] mb-[30px] px-[35px] py-[27px] rounded-lg">
+            <div class="contiser">
+                <div class="carousel-link">
                     <h1 class="text-[44px] leading-[56px] text-[#283f4d] font-bold">Testimonial Carousel</h1>
                     <ul class="flex items-center flex-wrap gap-1 py-3">
-                        <li><a href="#" class="text-lg leading-8 text-[#006AFF] font-bold w-[fit-content]">💻 Settings</a></li>|
-                        <li><a href="#" class="text-lg leading-8 text-[#006AFF] font-bold w-[fit-content]">🎓 Layers</a></li>|
-                        <li><a href="#" class="text-lg leading-8 text-[#006AFF] font-bold w-[fit-content]">🎉 Animations</a></li>|
-                        <li><a href="#" class="text-lg leading-8 text-[#006AFF] font-bold w-[fit-content]">🏗️ Layout</a></li>|
-                        <li><a href="#" class="text-lg leading-8 text-[#006AFF] font-bold w-[fit-content]">📱 Responsive</a></li>|
-                        <li><a href="#" class="text-lg leading-8 text-[#006AFF] font-bold w-[fit-content]">⚡ Speed</a></li>
+                        <li><a href="#" class="TestimonialsLinkBtn">💻 Settings</a></li>|
+                        <li><a href="#" class="TestimonialsLinkBtn">🎓 Layers</a></li>|
+                        <li><a href="#" class="TestimonialsLinkBtn">🎉 Animations</a></li>|
+                        <li><a href="#" class="TestimonialsLinkBtn">🏗️ Layout</a></li>|
+                        <li><a href="#" class="TestimonialsLinkBtn">📱 Responsive</a></li>|
+                        <li><a href="#" class="TestimonialsLinkBtn">⚡ Speed</a></li>
                     </ul>
-                    <p class="text-lg font-medium text-[#46647C] leading-7 py-[7px]">
+                    <p class="testimonialP">
                         <span class="text-sm font-bold text-[#46647C] tracking-[1px]">
                             DESCRIPTION:
                         </span> 
                         Display your product testimonials in an elegant and modern way, using a testimonials slider.
                     </p>
-                    <p class="text-lg font-medium text-[#46647C] leading-7 py-[7px]">
+                    <p class="testimonialP">
                         <span class="text-sm font-bold text-[#46647C] tracking-[1px]">
                             PREMIUM:
                         </span>
@@ -185,10 +187,10 @@
                     <div class="link-btn flex flex-wrap mt-4">
                         <bold class="text-sm font-bold text-[#46647C] leading-10 tracking-[1px] mr-4">TAGS:</bold>
                         <div class="flex items-center flex-wrap gap-3">
-                            <a href="#" class="text-xs leading-[30px] text-white font-medium tracking-[1px] px-4 rounded-full bg-blue-700 inline-block">CAROUSEL</a>
-                            <a href="#" class="text-xs leading-[30px] text-white font-medium tracking-[1px] px-4 rounded-full bg-blue-700 inline-block">FULL WIDTH</a>
-                            <a href="#" class="text-xs leading-[30px] text-white font-medium tracking-[1px] px-4 rounded-full bg-blue-700 inline-block">PRO</a>
-                            <a href="#" class="text-xs leading-[30px] text-white font-medium tracking-[1px] px-4 rounded-full bg-blue-700 inline-block">TESTIMONIAL SLIDER</a>
+                            <a href="#" class="testimnialFilterBtn">CAROUSEL</a>
+                            <a href="#" class="testimnialFilterBtn">FULL WIDTH</a>
+                            <a href="#" class="testimnialFilterBtn">PRO</a>
+                            <a href="#" class="testimnialFilterBtn">TESTIMONIAL SLIDER</a>
                         </div>
                     </div>
                 </div>
@@ -265,68 +267,75 @@
         
         <!-- social-link------- -->
         <section id="social-links" class="bg-[#1e2d41] py-9">
-            <div class="inner-content max-w-[1240px] px-5 mx-auto flex flex-wrap gap-6">
-                <div class="social-txt">
-                    <h3 class="text-2xl font-semibold text-white tracking-normal"> Join the community</h3>
-                    <h6 class="font-normal text-[#C4CCD2] tracking-normal leading-7">Follow us and stay connected and updated.</h6>
-                </div>
-                <div class="social-items flex gap-2 items-center">
-                    <img src="./dist/images/Facebook.png" alt="img">
-                    <img src="./dist/images/Twitter.png" alt="img">
-                </div>
-                <div class="social-txt">
-                    <h3 class="text-2xl font-semibold text-white tracking-normal">Subscribe our newsletter</h3>
-                    <h6 class="font-normal text-[#C4CCD2] tracking-normal leading-7">And receive the latest news from Smart Slider.</h6>
-                </div>
-                <form action="">
-                    <div class="inp-roup flex items-center flex-wrap rounded-full overflow-hidden bg-white max-w-fit">
-                        <input type="email" placeholder="example@gmail.com" class="py-1 pl-4 border-none outline-none max-w-[224px]">
-                        <input type="submit" value="Subscribe" class="smBtn py-3 w-[110px] grid place-items-center bg-[#0b69ed] text-white text-lg font-semibold">
+            <div class="con max-w-[1240px] px-5 mx-auto ">
+                <div class="inner-content flex justify-start xl:justify-between flex-wrap gap-6">
+                    <div class="social-txt">
+                        <h3 class="text-2xl font-semibold text-white tracking-normal"> Join the community</h3>
+                        <h6 class="font-normal text-[#C4CCD2] tracking-normal leading-7">Follow us and stay connected and updated.</h6>
                     </div>
-                </form>
+                    <div class="social-items flex gap-2 items-center">
+                        <img src="./dist/images/Facebook.png" alt="img">
+                        <img src="./dist/images/Twitter.png" alt="img">
+                    </div>
+                    <div class="social-txt">
+                        <h3 class="text-2xl font-semibold text-white tracking-normal">Subscribe our newsletter</h3>
+                        <h6 class="font-normal text-[#C4CCD2] tracking-normal leading-7">And receive the latest news from Smart Slider.</h6>
+                    </div>
+                    <form action="">
+                        <div class="inp-roup">
+                            <input type="email" placeholder="example@gmail.com" class="py-2 sm:py-1 pl-4 border-none outline-none max-w-[224px]">
+                            <input type="submit" value="Subscribe" class="smBtn cursor-pointer py-2 sm:py-3 w-full sm:w-[110px] grid place-items-center bg-[#0b69ed] text-white text-lg font-semibold">
+                        </div>
+                    </form>
+                </div>
             </div>
+
         </section>
     </main>
 
     <!-- footer------- -->
     <footer>
         <section id="footer" class="bg-[#182333]">
-            <div class="inner-content max-w-[1240px] px-5 py-14 mx-auto flex justify-between flex-wrap gap-5">
-                <div class="logish">
-                    <img src="./dist/images/nextend.png" alt="logo">
-                    <p class="leading-8 text-[#C4CCD2] max-w-[380px]">
-                        Extending the world of WordPress and Joomla. Take your website to the next level with our plugins. Download Smart Slider 3 today and get started building beautiful sliders with confidence using our advanced editor.
-                    </p>
-                </div>
-                <div class="social w-fit">
-                    <h4 class="text-xl font-medium leading-8 text-white tracking-normal block pb-4 relative after:content-[''] after:w-12 after:h-1 after:bg-[#374558] after:left-0 after:bottom-1 after:block after:absolute">Company</h4>
-                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">About us</a>
-                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Nextendweb</a>
-                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Terms and Conditions</a>
-                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Privacy Policy</a>
-                </div>
-                <div class="social w-fit">
-                    <h4 class="text-xl font-medium leading-8 text-white tracking-normal block pb-4 relative after:content-[''] after:w-12 after:h-1 after:bg-[#374558] after:left-0 after:bottom-1 after:block after:absolute">Support</h4>
-                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Documentation</a>
-                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Tutorial Videos</a>
-                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Pricing FAQ</a>
-                </div>
-                <div class="social w-fit">
-                    <h4 class="text-xl font-medium leading-8 text-white tracking-normal block pb-4 relative after:content-[''] after:w-12 after:h-1 after:bg-[#374558] after:left-0 after:bottom-1 after:block after:absolute">Social</h4>
-                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Facebook</a>
-                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Twitter</a>
-                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Blog</a>
-                </div>
-                <div class="social w-fit">
-                    <h4 class="text-xl font-medium leading-8 text-white tracking-normal block pb-4 relative after:content-[''] after:w-12 after:h-1 after:bg-[#374558] after:left-0 after:bottom-1 after:block after:absolute">Quick Links</h4>
-                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Login to Account</a>
-                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Become an Affiliate</a>
-                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Partners & Deals</a>
-                    <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Why upgrade to Pro</a>
+            <div class="max-w-[1240px] px-5 py-14 mx-auto">
+                <div class="inner-content flex lg:justify-between flex-wrap gap-14 lg:gap-5">
+                    <div class="logish">
+                        <img src="./dist/images/nextend.png" alt="logo">
+                        <p class="leading-8 text-[#C4CCD2] max-w-[380px]">
+                            Extending the world of WordPress and Joomla. Take your website to the next level with our plugins. Download Smart Slider 3 today and get started building beautiful sliders with confidence using our advanced editor.
+                        </p>
+                    </div>
+                    <div class="social w-fit">
+                        <h4 class="text-xl font-medium leading-8 text-white tracking-normal block pb-4 relative after:content-[''] after:w-12 after:h-1 after:bg-[#374558] after:left-0 after:bottom-1 after:block after:absolute">Company</h4>
+                        <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">About us</a>
+                        <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Nextendweb</a>
+                        <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Terms and Conditions</a>
+                        <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Privacy Policy</a>
+                    </div>
+                    <div class="social w-fit">
+                        <h4 class="text-xl font-medium leading-8 text-white tracking-normal block pb-4 relative after:content-[''] after:w-12 after:h-1 after:bg-[#374558] after:left-0 after:bottom-1 after:block after:absolute">Support</h4>
+                        <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Documentation</a>
+                        <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Tutorial Videos</a>
+                        <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Pricing FAQ</a>
+                    </div>
+                    <div class="social w-fit">
+                        <h4 class="text-xl font-medium leading-8 text-white tracking-normal block pb-4 relative after:content-[''] after:w-12 after:h-1 after:bg-[#374558] after:left-0 after:bottom-1 after:block after:absolute">Social</h4>
+                        <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Facebook</a>
+                        <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Twitter</a>
+                        <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Blog</a>
+                    </div>
+                    <div class="social w-fit">
+                        <h4 class="text-xl font-medium leading-8 text-white tracking-normal block pb-4 relative after:content-[''] after:w-12 after:h-1 after:bg-[#374558] after:left-0 after:bottom-1 after:block after:absolute">Quick Links</h4>
+                        <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Login to Account</a>
+                        <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Become an Affiliate</a>
+                        <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Partners & Deals</a>
+                        <a href="#" class="font-normal leading-8 text-[#C4CCD2] hover:text-white tracking-normal block">Why upgrade to Pro</a>
+                    </div>
                 </div>
             </div>
             <div class="copyright text-[#C4CCD2] text-center py-5 bg-[#16202e]">
-                Copyright © 2023 Nextend. All rights reserved.
+                <div class="contiser">
+                    Copyright © 2023 Nextend. All rights reserved.
+                </div>
             </div>
         </section>
     </footer>

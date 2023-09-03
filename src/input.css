@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base{
     *{
         margin: 0;
@@ -89,8 +90,6 @@
         font-family: 'Roboto', sans-serif;
         background-color: var(--blue3);
     }
-    #swiper{
-    }
     .swiper{
         max-width: 1196px !important;
         margin: auto;
@@ -129,7 +128,7 @@
         padding: 30px 0 10px 0;
     }
     .swiper-wrapper{
-        padding: 142px 0;
+        padding: 176px 0;
     }
     .swipe-pagination{
         padding: 20px;
@@ -195,3 +194,56 @@
         }
     }
 }
+@layer components{
+    /* header----- */
+    .header{
+        @apply fixed top-0 left-0 w-full z-50;
+    }
+    .nav-wrapper{
+        @apply flex justify-between px-5 py-0;
+    }
+    .menu{
+        @apply gap-8 hidden xl:flex;
+    }
+    .button{
+        @apply  flex items-center gap-6;
+    }
+    .mobile-menu{
+        @apply  xl:hidden flex items-center rotate-90;
+    }
+    .mobileBtn{
+        @apply  xl:hidden p-1 border border-b-gray-50 text-white font-bold;
+    }
+
+    /* hero-section------- */
+    .slider-main{
+        @apply px-5 lg:px-[40px] xl:px-0;
+    }
+    .content{
+        @apply bg-white text-center rounded-md px-[28px] py-[30px];
+    }
+
+    /* testimonials--------- */
+    .contiser{
+        @apply max-w-[820px] mx-auto px-5;
+    }
+    .carousel-link{
+       @apply mt-[80px] mb-[30px] px-[35px] py-[27px] rounded-lg;
+    }
+    .TestimonialsLinkBtn{
+       @apply text-lg leading-8 text-[#006AFF] font-bold w-[fit-content];
+    }
+    .testimonialP{
+       @apply text-lg font-medium text-[#46647C] leading-7 py-[7px];
+    }
+    .testimnialFilterBtn{
+       @apply text-xs leading-[30px] text-white font-medium tracking-[1px] px-4 rounded-full bg-blue-700 inline-block;
+    }
+    /* social-linkr------ */
+    .inp-roup{
+        @apply flex items-center flex-wrap rounded-full overflow-hidden bg-white max-w-fit;
+    }
+}
+/* @layer utilities{
+
+} */
